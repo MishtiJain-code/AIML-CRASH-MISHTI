@@ -1,16 +1,7 @@
-def fun(sentence):
-    words=sentence.lower().split()
-    freq={}
-
-    for word in words:
+count=0
+list=["Python","Java","SQL","Communication","Problem_solving"]
+for indx,value in enumerate(list):
+    print(f"{indx}:{value}")
+    count+=1
     
-        if word in freq:
-            freq[word]+=1
-        else:
-            freq[word]=1
-
-    return freq
-
-text="Python is a easy and python is powerfull programming language"
-result = fun(text)
-print(result)
+print(count)
